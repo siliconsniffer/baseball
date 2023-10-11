@@ -1,17 +1,12 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo719.cur), auto !important;} /* End https://www.cursors-4u.com */
 }
 
 a, p, h1 {
     color: whitesmoke;
 }
-.bildrahmen {
-    width: 300px;
-    display: flex;
-    flex: 0.5;
-}
+
 body {
     background-color: #ffffff;
     opacity: 1;
@@ -22,13 +17,21 @@ body {
 .content{
     display: flex;
     width: fit-max;
+    align-items: flex-start;
     margin-top: 30px;
     background-color: #3e3e3e;
     border-radius: 2.5px;
+    box-shadow: 3px 3px 3px #3e3e3e;
+    filter: blur();
     overflow: hidden;
-}
-.content .text {
-    padding-left: 10px;
+
+    & .bildrahmen {
+        display: flex;
+    }
+
+    & .text {
+        padding-left: 10px;
+    }
 }
 
 .navbar{
@@ -48,10 +51,10 @@ body {
     margin-right: auto;
     top: 0;
     align-self: flex-start;
-}
 
-.navbar-brand:hover {
-    color: grey;
+    &:hover {
+        color: grey;
+    }
 }
 
 footer {
