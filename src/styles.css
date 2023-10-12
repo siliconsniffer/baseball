@@ -11,14 +11,19 @@ body {
     background-color: #ffffff;
     opacity: 1;
     background-image:  repeating-linear-gradient(45deg, rgba(0,0,0,0.34) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.34) 75%, rgba(0,0,0,0.34)), repeating-linear-gradient(45deg, rgba(0,0,0,0.34) 25%, #ffffff 25%, #ffffff 75%, rgba(0,0,0,0.34) 75%, rgba(0,0,0,0.34));
-    background-position: 0 0, 30px 30px;
-    background-size: 60px 60px;
+    background-position: 0 0, 200px 200px;
+    background-size: 400px 400px;
+}
+
+.spacer {
+    height: 25px;
+    margin-top: 56px;
 }
 .content{
     display: flex;
     width: fit-max;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-bottom: 25px;
     background-color: #3e3e3e;
     border-radius: 2.5px;
     box-shadow: 3px 3px 3px #3e3e3e;
@@ -36,9 +41,11 @@ body {
 
 .navbar{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+
     padding: 2px;
     width: 100%;
+    margin: auto;
     border-bottom: solid 1.5px;
     background-color: #3e3e3e;
     position: absolute;
@@ -46,10 +53,26 @@ body {
     right:0px;
 }
 
+.navbar ul li{
+    transition-duration: 0.5s;
+    background-color: #181818;
+    /*padding: 15px;*/
+    list-style: none;
+    display: inline-block;
+    /*margin-left: 11rem;*/
+    /*position: relative;*/
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .navbar-brand {
     margin-left: 10px;
     margin-right: auto;
-    top: 0;
     align-self: flex-start;
 
     &:hover {
