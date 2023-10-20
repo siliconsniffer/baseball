@@ -3,7 +3,7 @@
     text-decoration: none;
 }
 
-a, p, h1 {
+a, p{
     color: whitesmoke;
 }
 
@@ -36,6 +36,13 @@ body {
 
     & .text {
         padding-left: 10px;
+
+        & .title {
+            font-weight: bold;
+            text-transform: uppercase;
+            color:whitesmoke;
+            margin-top: 1rem;
+        }
     }
 }
 
