@@ -1,9 +1,9 @@
 * { 
-    text-decoration: none;
+    text-decoration: none; /* z.B. Links werden nicht unterstrichen */
 }
 
 a, p{
-    color: #5e5e5e;
+    color: #5e5e5e; /* Farbe für alle a & p-elemnte */
 }
 
 body {
@@ -33,10 +33,10 @@ body {
     }
 }
 
-.navbar-a {
+/*.navbar-a {
     color: #5e5e5e;
     text-decoration: none;
-}
+}*/
 
 
 .spacer {
