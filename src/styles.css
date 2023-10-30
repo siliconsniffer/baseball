@@ -1,16 +1,19 @@
-* { 
+* {
     text-decoration: none;
+    /* z.B. Links werden nicht unterstrichen */
 }
 
-a, p{
+a,
+p {
     color: #5e5e5e;
+    /* Farbe für alle a & p-elemnte */
 }
 
 body {
     background: #d7d7d7;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-evenly;
     padding: 2px;
@@ -18,7 +21,8 @@ body {
     filter: drop-shadow(3px 3px 3px #c8c8c8);
     background-color: #e1e1e1;
     position: absolute;
-    top:0px; right:0px;
+    top: 0px;
+    right: 0px;
     overflow: auto;
 }
 
@@ -33,10 +37,10 @@ body {
     }
 }
 
-.navbar-a {
+/*.navbar-a {
     color: #5e5e5e;
     text-decoration: none;
-}
+}*/
 
 
 .spacer {
@@ -50,7 +54,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.content, .content-left {
+
+.content,
+.content-left {
     display: flex;
     width: 95%;
 
@@ -68,7 +74,7 @@ body {
     }
 
     & .text {
-        padding-left: 10px;
+        padding: 0px 10px 0px;
 
         & .title {
             font-weight: bold;
@@ -81,11 +87,14 @@ body {
 
 .content-left {
     justify-content: space-between;
- }
+}
 
-.content:hover, .content-left:hover {
+/* Styling wenn der Cursor über dem Content-elemnt schwebt */
+.content:hover,
+.content-left:hover {
     box-shadow: 0px 0px 10px 5px #5e5e5e;
     transition: 250ms;
+
     & .bildrahmen {
         filter: grayscale(0%);
         transition: 250ms;
@@ -104,15 +113,17 @@ footer {
     bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
-    
-}
+/* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
+@media screen and (max-width: 600px) {}
 
+/* Setzt das styling wenn der User "darkmode" aktiviert hat */
 @media (prefers-color-scheme: dark) {
-    a, p{
+
+    a,
+    p {
         color: #d7d7d7;
     }
-    
+
     .navbar {
         filter: drop-shadow(3px 3px 3px #2a2c2b) blur();
     }
@@ -120,24 +131,27 @@ footer {
     .navbar-a {
         color: #d7d7d7;
     }
-    
-    .content, .content-left {
+
+    .content,
+    .content-left {
         background-color: #383d39;
         filter: drop-shadow(3px 3px 3px #202020) blur();
 
         .text {
             & .title {
                 color: #d7d7d7;
-                }
-        }          
+            }
+        }
     }
 
-    body{
+    body {
         background: #282828;
     }
+
     footer {
         background-color: #282828;
     }
+
     .navbar {
         background-color: #2e302f;
     }
