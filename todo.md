@@ -1,7 +1,8 @@
 # To-Do
 ↓ Nach Priorität geordnet
+- [ ] Bilderbreite relativ zu Bildschirmgröße festlegen
 - [x] ~~{CSS} Header-Items stylen~~
-- [x] {CSS} Hintergrund
+- [x] ~~{CSS} Hintergrund ~~
 - [ ] {HTML + CSS} Unterseiten einrichten
 - [ ] {HTML} Inhalt eintragen
 - [ ] {CSS} Bilder auf kleineren Bildschirmen fixen

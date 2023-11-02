@@ -11,25 +11,33 @@ p {
 
 body {
     background: #d7d7d7;
+    overflow: scroll;
+}
+
+img {
+    width: 100%;
+    min-width: 15rem;
+    max-width: 25rem;
+    height: auto;
 }
 
 .navbar {
     display: flex;
     justify-content: space-evenly;
-    padding: 2px;
+    padding: 2.5px;
     width: 100%;
     filter: drop-shadow(3px 3px 3px #c8c8c8);
     background-color: #e1e1e1;
     position: absolute;
     top: 0px;
     right: 0px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .navbar-brand {
     display: flex;
     justify-content: center;
-    font-weight: bold;
+    font-weight: bolder;
     text-transform: uppercase;
 
     &:hover {
@@ -38,23 +46,18 @@ body {
 }
 
 
-.spacer {
-    height: 25px;
-    margin-top: 24px;
-}
-
-
 .container {
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .content,
 .content-left {
     display: flex;
     width: 95%;
-
     align-items: flex-start;
     margin-bottom: 25px;
     background-color: #e1e1e1;
@@ -91,24 +94,27 @@ body {
 
     & .bildrahmen {
         filter: grayscale(0%);
-        transition: 250ms;
+        transition: 200ms;
     }
 }
 
 
 footer {
-    display: block;
     background-color: #3e3e3e;
-    padding: 2px;
-    width: auto;
+    padding: 2.5px;
     color: whitesmoke;
-    border: 1.5px solid black;
-    position: fixed;
-    bottom: 0;
+    border-top: 1.5px solid black;
 }
 
 /* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+
+    .content,
+    .content-left {
+        flex-direction: column;
+    }
+
+}
 
 /* Setzt das styling wenn der User "darkmode" aktiviert hat */
 @media (prefers-color-scheme: dark) {
