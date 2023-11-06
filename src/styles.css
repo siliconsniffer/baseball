@@ -10,7 +10,7 @@ p {
 }
 
 body {
-    background: #d7d7d7; 
+    background: #d7d7d7;
     overflow: scroll;
 }
 
@@ -119,13 +119,14 @@ img {
 .footer {
     display: flex;
     width: 100%;
+    overflow: hidden;
+    margin-top: auto;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #3e3e3e;
     padding: 2.5px;
     color: whitesmoke;
     border-top: 1.5px solid black;
-    position:static ;
-    bottom: 0;
-    left: 0;
 }
 
 /* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
