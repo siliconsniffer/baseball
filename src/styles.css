@@ -10,14 +10,14 @@ p {
 }
 
 body {
-    background: #d7d7d7;
+    background: #d7d7d7; 
     overflow: scroll;
 }
 
 img {
     width: 100%;
     min-width: 20rem;
-    max-width: 30rem;
+    max-width: 25rem;
     height: auto;
 }
 
@@ -35,12 +35,14 @@ img {
 }
 
 .navbar-a {
+    align-self: center;
     flex-grow: 1;
+    font-size: larger;
 }
 
 .navbar-big {
-    flex-grow: 2;
-    font-size: larger;
+    flex-grow: 5;
+    font-size:x-large;
 }
 
 .navbar-brand {
@@ -56,7 +58,7 @@ img {
 
 
 .container {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,15 +70,17 @@ img {
     display: flex;
     width: 95%;
     align-items: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
     background-color: #e1e1e1;
     border-radius: 2.5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     filter: drop-shadow(3px 3px 3px #bcbcbc) blur();
     overflow: hidden;
 
     & .bildrahmen {
         display: flex;
-        filter: grayscale(80%)
+        filter: grayscale(80%);
     }
 
     & .text {
@@ -95,6 +99,8 @@ img {
 
 .content-left {
     justify-content: space-between;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* Styling wenn der Cursor über dem Content-elemnt schwebt */
@@ -110,15 +116,16 @@ img {
 }
 
 
-footer {
+.footer {
     display: flex;
-    align-self: flex-end;
+    width: 100%;
     background-color: #3e3e3e;
     padding: 2.5px;
     color: whitesmoke;
     border-top: 1.5px solid black;
-    position: relative;
+    position:static ;
     bottom: 0;
+    left: 0;
 }
 
 /* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
