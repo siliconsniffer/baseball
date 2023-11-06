@@ -16,8 +16,8 @@ body {
 
 img {
     width: 100%;
-    min-width: 15rem;
-    max-width: 25rem;
+    min-width: 20rem;
+    max-width: 30rem;
     height: auto;
 }
 
@@ -32,6 +32,15 @@ img {
     top: 0px;
     right: 0px;
     overflow: hidden;
+}
+
+.navbar-a {
+    flex-grow: 1;
+}
+
+.navbar-big {
+    flex-grow: 2;
+    font-size: larger;
 }
 
 .navbar-brand {
@@ -72,6 +81,8 @@ img {
 
     & .text {
         padding: 0px 10px 0px;
+        font-size: larger;
+
 
         & .title {
             font-weight: bold;
@@ -100,20 +111,32 @@ img {
 
 
 footer {
+    display: flex;
+    align-self: flex-end;
     background-color: #3e3e3e;
     padding: 2.5px;
     color: whitesmoke;
     border-top: 1.5px solid black;
+    position: relative;
+    bottom: 0;
 }
 
 /* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     .content,
     .content-left {
         flex-direction: column;
     }
 
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 35rem;
+    }
+    p {
+        font-size: medium;
+    }
 }
 
 /* Setzt das styling wenn der User "darkmode" aktiviert hat */
