@@ -118,14 +118,16 @@ img {
 
 .footer {
     display: flex;
-    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: auto;
     background-color: #3e3e3e;
     padding: 2.5px;
     color: whitesmoke;
     border-top: 1.5px solid black;
-    position:static ;
+    /*position: static ;
     bottom: 0;
-    left: 0;
+    left: 0;*/
 }
 
 /* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
