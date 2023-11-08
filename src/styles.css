@@ -4,7 +4,7 @@
 }
 
 a,
-p {
+p, li {
     color: #5e5e5e;
     /* Farbe für alle a & p-elemnte */
 }
@@ -12,6 +12,11 @@ p {
 body {
     background: #d7d7d7;
     overflow: scroll;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 img {
@@ -24,6 +29,7 @@ img {
 
 .container {
     margin-top: 3.5rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +77,7 @@ img {
 /* Styling wenn der Cursor über dem Content-elemnt schwebt */
 .content:hover,
 .content-left:hover {
-    box-shadow: 0px 0px 10px 5px #5e5e5e;
+    box-shadow: 0px 0px 10px 5px #424242;
     transition: 250ms;
 
     & .bildrahmen {
@@ -106,7 +112,7 @@ img {
 @media (prefers-color-scheme: dark) {
 
     a,
-    p {
+    p, li {
         color: #d7d7d7;
     }
 

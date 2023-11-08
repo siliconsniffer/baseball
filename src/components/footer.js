@@ -7,15 +7,19 @@ class Footer extends HTMLElement {
         <style>
         footer {
             display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2.5rem;
             justify-content: space-around;
             align-items: center;
             background-color: #3e3e3e;
+            margin: 0px;
             padding: 2.5px;
             color: whitesmoke;
             border-top: 1.5px solid black;
-            position: static;
-            bottom: 0;
-            left: 0;
+            
         }
         </style>
         <footer> <!-- Footer (Unterstes Element), enthält wichtige Infos über die Seite -->
