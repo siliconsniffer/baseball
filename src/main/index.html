@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Webschach</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">    
-		<link rel="stylesheet" type="text/css" href="../styles.css" />             <!-- Verlinkt das Stylesheet zu styles.css -->
-        <link rel="icon" type="image/x-icon" href="../assets/chess.png">           <!-- Setzt das Icon für das Browserfenster -->
-    </head>
-    <body>
-        <div class="navbar">
-            <a class="navbar-a" href="../page1/page1.html" style="flex-grow: 1;">                   <div class="navbar-brand">Page 1</div></a>
-            <a class="navbar-a" href="../main/index.html"  style="flex-grow: 2; font-size: larger;"><div class="navbar-brand">Home</div>  </a>
-            <a class="navbar-a" href="../page2/page2.html" style="flex-grow: 1;">                   <div class="navbar-brand">Page 2</div></a> <!-- Titel in der Navigationsleiste welcher mit einem Link versehen ist -->        
-        </div>
-        <div class="spacer"></div>
-        <div class="container">
-            <div class="content">
-                <div class="bildrahmen">
-                    <img src="../assets/chess-1215079_1280.jpg" alt="" style='width: 400px;'>
-                </div>
-                <div class="text">
-                    <div class="title">Schach</div>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        <br>
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        <br>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        <br>
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    
-                </div>
+
+<head>
+    <title>Webschach</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles.css" /> <!-- Verlinkt das Stylesheet zu styles.css -->
+    <link rel="icon" type="image/x-icon" href="../assets/chess.png"> <!-- Setzt das Icon für das Browserfenster -->
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="navbar-a" href="../page1/page1.html">
+            <div class="navbar-brand">Page 1</div>
+        </a> <!-- Titel in der Navigationsleiste welcher mit einem Link versehen ist -->
+        <a class="navbar-a" href="../page2/page2.html">
+            <div class="navbar-brand">Page 2</div>
+        </a>
+        <a class="navbar-a navbar-big" href="../main/index.html">
+            <div class="navbar-brand">Home</div>
+        </a> <!-- z.B. hier zur Startseite -->
+        <a class="navbar-a" href="../page2/page3.html">
+            <div class="navbar-brand">Page 2</div>
+        </a>
+        <a class="navbar-a" href="../page2/page2.html">
+            <div class="navbar-brand">Test</div>
+        </a>
+    </div>
+    <div class="container"> <!-- Element in welchem sich alle "Contents" befinden -->
+        <div class="content"> <!-- Elemnent in dem sich der tatsächliche Inhalt befindet, hier Bild + Text -->
+            <div class="bildrahmen">
+                <img src="../assets/chess-1215079_1280.webp" alt="">
             </div>
-            <div class="content-left">
-                
-                <div class="text">
-                    <div class="title">Schach</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        <br>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                    </p>
-                </div>
-                <div class="bildrahmen">
-                    <img src="../assets/chess2.jpg" alt="" style='width: 400px;'>
-                </div>
-            </div>
-            <div class="content">
-                <div class="bildrahmen">
-                    <img src="../assets/chess1.jpg" alt="" style='width: 400px;'>
-                </div>
-                <div class="text">
-                    <div class="title">Schach</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    </p>
-                </div>
+            <div class="text">
+                <div class="title">Schach</div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                    <br>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem ipsum dolor sit amet.
+                    <br>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                    <br>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem ipsum dolor sit amet.
+                </p>
+
             </div>
         </div>
-        <footer>                                                                <!-- Footer (Unterstes Element), enthält wichtige Infos über die Seite -->
-            <a>Felix & Linus © 2023</a>
-        </footer>
+        <div class="content-left">
+            <div class="text">
+                <div class="title">Schach</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                    <br>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                </p>
+            </div>
+            <div class="bildrahmen">
+                <img src="../assets/chess2.webp" alt="">
+            </div>
         </div>
-    </body>
+        <div class="content">
+            <div class="bildrahmen">
+                <img src="../assets/chess1.webp" alt="">
+            </div>
+            <div class="text">
+                <div class="title">Schach</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer"> <!-- Footer (Unterstes Element), enthält wichtige Infos über die Seite -->
+        <p>Felix & Linus © 2023</p>
+        <a href="../impressum/impressum.html">Impressum</a>
+    </div>
+</body>
+
 </html>

@@ -1,11 +1,10 @@
 # To-Do
 ↓ Nach Priorität geordnet
-- [x] ~~{CSS} Header-Items stylen~~
-- [x] {CSS} Hintergrund
+- [ ] Bilderbreite relativ zu Bildschirmgröße festlegen
 - [ ] {HTML + CSS} Unterseiten einrichten
 - [ ] {HTML} Inhalt eintragen
-- [ ] {CSS} Bilder auf kleineren Bildschirmen fixen
-    - [ ] {CSS} Media Querry für kleinere Bildschirme
+- [x] ~~{CSS} Bilder auf kleineren Bildschirmen fixen~~
+    - [x] ~~{CSS} Media Querry für kleinere Bildschirme~~
 - [ ] {HTML + CSS + JS} Themen mit wechsel per Button
-- [ ] {CSS} Footer stylen
+- [ ] {CSS} Footer stylen (ganz unten + width:100%)
 - [x] ~~{HTML} Titel im Content von h1 zu div~~
