@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
         <style>
         footer {
             display: flex;
-            position: absolute;
+            position: relative;
             bottom: 0;
             left: 0;
             width: 100%;

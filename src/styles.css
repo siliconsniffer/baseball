@@ -4,7 +4,8 @@
 }
 
 a,
-p, li {
+p,
+li {
     color: #5e5e5e;
     /* Farbe für alle a & p-elemnte */
 }
@@ -12,11 +13,6 @@ p, li {
 body {
     background: #d7d7d7;
     overflow: scroll;
-}
-
-.page-container {
-    position: relative;
-    min-height: 100vh;
 }
 
 img {
@@ -30,6 +26,8 @@ img {
 .container {
     margin-top: 3.5rem;
     padding-bottom: 2.5rem;
+    position: relative;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +110,8 @@ img {
 @media (prefers-color-scheme: dark) {
 
     a,
-    p, li {
+    p,
+    li {
         color: #d7d7d7;
     }
 
