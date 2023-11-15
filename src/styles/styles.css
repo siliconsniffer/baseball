@@ -11,6 +11,8 @@ li {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background: #d7d7d7;
     overflow: scroll;
 }
@@ -25,9 +27,7 @@ img {
 
 .container {
     margin-top: 3.5rem;
-    padding-bottom: 2.5rem;
     position: relative;
-    min-height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;

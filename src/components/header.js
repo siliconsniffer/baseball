@@ -52,19 +52,19 @@ class Header extends HTMLElement {
         }
       </style>
       <div class="navbar">
-        <a class="navbar-a" href="../page1/page1.html">
+        <a class="navbar-a" href="page1.html">
             <div class="navbar-brand">Page 1</div>
         </a> <!-- Titel in der Navigationsleiste welcher mit einem Link versehen ist -->
-        <a class="navbar-a" href="../page2/page2.html">
+        <a class="navbar-a" href="page2.html">
             <div class="navbar-brand">Page 2</div>
         </a>
-        <a class="navbar-a navbar-big" href="../main/index.html">
+        <a class="navbar-a navbar-big" href="index.html">
             <div class="navbar-brand">Home</div>
         </a> <!-- z.B. hier zur Startseite -->
-        <a class="navbar-a" href="../impressum/impressum.html">
+        <a class="navbar-a" href="impressum.html">
             <div class="navbar-brand">Impressum</div>
         </a>
-        <a class="navbar-a" href="../sources/sources.html">
+        <a class="navbar-a" href="sources.html">
             <div class="navbar-brand">Sources</div>
         </a>
     </div>

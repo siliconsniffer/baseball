@@ -5,27 +5,22 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <style>
-        footer {
+        .footer {
             display: flex;
-            position: relative;
-            bottom: 0;
-            left: 0;
-            width: 100%;
             height: 2.5rem;
             justify-content: space-around;
             align-items: center;
-            background-color: #3e3e3e;
-            margin: 0px;
+            background-color: #2e302f;
             padding: 2.5px;
             color: whitesmoke;
             border-top: 1.5px solid black;
             
         }
         </style>
-        <footer> <!-- Footer (Unterstes Element), enthält wichtige Infos über die Seite -->
+        <div class="footer"> <!-- Footer (Unterstes Element), enthält wichtige Infos über die Seite -->
         <p>Felix & Linus © 2023</p>
-        <a href="../impressum/impressum.html">Impressum</a>
-        </footer>
+        <a href="impressum/impressum.html">Impressum</a>
+        </div class="footer">
         `
     }
 }
