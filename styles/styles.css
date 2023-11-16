@@ -1,13 +1,11 @@
 * {
     text-decoration: none;
-    /* z.B. Links werden nicht unterstrichen */
 }
 
 a,
 p,
 li {
     color: #5e5e5e;
-    /* Farbe für alle a & p-elemnte */
 }
 
 body {
@@ -26,9 +24,12 @@ img {
 
 
 .container {
+    display: flex;
+    min-height: 100vh;
+    min-height: 100svh;
     margin-top: 3.5rem;
     position: relative;
-    display: flex;
+    
     flex-direction: column;
     align-items: center;
     overflow: hidden;
@@ -72,7 +73,6 @@ img {
     border-bottom-right-radius: 5px;
 }
 
-/* Styling wenn der Cursor über dem Content-elemnt schwebt */
 .content:hover,
 .content-left:hover {
     box-shadow: 0px 0px 10px 5px #424242;
@@ -85,9 +85,6 @@ img {
 }
 
 
-
-
-/* Setzt das styling wenn die Bildschirmbreite des gerätes kleiner/gleich 600 Pixeln entspricht */
 @media screen and (max-width: 700px) {
 
     .content,
@@ -106,7 +103,7 @@ img {
     }
 }
 
-/* Setzt das styling wenn der User "darkmode" aktiviert hat */
+
 @media (prefers-color-scheme: dark) {
 
     a,
