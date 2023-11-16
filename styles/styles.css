@@ -11,6 +11,7 @@ li {
 body {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     background: #d7d7d7;
     overflow: scroll;
 }
@@ -27,9 +28,8 @@ img {
     display: flex;
     min-height: 100vh;
     min-height: 100svh;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     position: relative;
-    
     flex-direction: column;
     align-items: center;
     overflow: hidden;

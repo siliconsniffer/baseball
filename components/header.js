@@ -8,13 +8,11 @@ class Header extends HTMLElement {
         .navbar {
           display: flex;
           justify-content: space-evenly;
-          padding: 2.5px;
+          padding: 1.5px;
           width: 100%;
           filter: drop-shadow(3px 3px 3px #c8c8c8);
           background-color: #e1e1e1;
-          position: absolute;
-          top: 0px;
-          right: 0px;
+          position: relative;
           overflow: hidden;
         }
         
