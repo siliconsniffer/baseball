@@ -5,18 +5,31 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
       <style>
+        :root {
+            --bg-header: #272727;
+            --drop-shadow: 3px 3px 3px #212121;
+            --nav-a: #9b9b9b;
+        }
+
+        .light-mode {
+            --bg-header: #e1e1e1;
+            --drop-shadow: 3px 3px 3px #c8c8c8;
+            --nav-a: #504f4f;
+        }
+        
         .navbar {
           display: flex;
           justify-content: space-evenly;
           padding: 1.5px;
-          filter: drop-shadow(3px 3px 3px #c8c8c8);
-          background-color: #e1e1e1;
+          filter: drop-shadow(var(--drop-shadow));
+          background-color: var(--bg-header);
           position: relative;
           overflow: hidden;
         }
         
         .navbar-a {
             align-self: center;
+            color: var(--nav-a);
             flex-grow: 1;
             font-size: larger;
         }
@@ -36,16 +49,11 @@ class Header extends HTMLElement {
                 color: grey;
             }
         }
-
-        @media (prefers-color-scheme: dark) {
-            .navbar {
-                background-color: #2e302f;
-                filter: drop-shadow(3px 3px 3px #2a2c2b) blur();
-            }
         
-            .navbar-a {
-                color: #d7d7d7;
-            }
+        @media screen and (max-width: 700px) {
+            .navbar-a [
+                font-size: large;
+            ]
         }
       </style>
       <div class="navbar">

@@ -5,12 +5,18 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <style>
+        :root {
+            --bg-color: #282828;
+        }
+        .light-mode {
+            --bg-color: #e1e1e1;
+        }
         .footer {
             display: flex;
             height: 2.5rem;
             justify-content: space-around;
             align-items: center;
-            background-color: #e1e1e1;
+            background-color: var(--bg-color);
             padding: 2.5px;
             border-top: 1.5px solid black;
             
@@ -23,11 +29,6 @@ class Footer extends HTMLElement {
         
             &:hover {
                 background-color: #383d39;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .footer {
-                background-color: #2e302f;
             }
         }
         </style>
@@ -44,18 +45,18 @@ class Footer extends HTMLElement {
         this.button.addEventListener('click', this.toggleMode.bind(this));
     }
     setInitialMode() {
-        const currentMode = localStorage.getItem('mode') || 'dark';
+        const currentMode = localStorage.getItem('mode') || 'light';
 
         // Set the initial dark mode class
-        document.body.classList.toggle('dark-mode', currentMode === 'dark');
+        document.body.classList.toggle('light-mode', currentMode === 'light');
     }
 
     toggleMode() {
         // Toggle dark mode class on body
-        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode');
 
         // Save the mode to localStorage
-        localStorage.setItem('mode', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        localStorage.setItem('mode', document.body.classList.contains('light-mode') ? 'light' : 'dark');
     }
 }
 
