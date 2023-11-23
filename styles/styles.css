@@ -128,7 +128,8 @@ img {
         max-width: 35rem;
     }
 
-    p {
+    p,
+    li {
         font-size: medium;
     }
 }

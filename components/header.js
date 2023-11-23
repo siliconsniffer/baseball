@@ -31,12 +31,12 @@ class Header extends HTMLElement {
             align-self: center;
             color: var(--nav-a);
             flex-grow: 1;
-            font-size: larger;
+            font-size: x-large;
         }
         
         .navbar-big {
             flex-grow: 5;
-            font-size:x-large;
+            font-size:xx-large;
         }
         
         .navbar-brand {
@@ -51,10 +51,11 @@ class Header extends HTMLElement {
         }
         
         @media screen and (max-width: 700px) {
-            .navbar-a [
+            .navbar-a {
                 font-size: large;
-            ]
+            }
         }
+
       </style>
       <div class="navbar">
         <a class="navbar-a" href="page1.html">
