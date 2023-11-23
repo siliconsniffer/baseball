@@ -9,7 +9,6 @@ class Header extends HTMLElement {
           display: flex;
           justify-content: space-evenly;
           padding: 1.5px;
-          width: 100%;
           filter: drop-shadow(3px 3px 3px #c8c8c8);
           background-color: #e1e1e1;
           position: relative;
@@ -52,13 +51,13 @@ class Header extends HTMLElement {
       <div class="navbar">
         <a class="navbar-a" href="page1.html">
             <div class="navbar-brand">Page 1</div>
-        </a> <!-- Titel in der Navigationsleiste welcher mit einem Link versehen ist -->
+        </a>
         <a class="navbar-a" href="page2.html">
             <div class="navbar-brand">Page 2</div>
         </a>
         <a class="navbar-a navbar-big" href="index.html">
             <div class="navbar-brand">Home</div>
-        </a> <!-- z.B. hier zur Startseite -->
+        </a>
         <a class="navbar-a" href="impressum.html">
             <div class="navbar-brand">Impressum</div>
         </a>
