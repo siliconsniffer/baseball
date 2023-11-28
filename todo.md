@@ -4,4 +4,4 @@
     - [ ] {CSS} Bilder auf kleineren Bildschirmen fixen
 - [ ] {HTML + CSS} Unterseiten einrichten
 - [ ] {HTML} Inhalt eintragen
-- [ ] {CSS} Navbar für Mobile stylen
+- [ ] {CSS} Navbar für Mobile stylen, Dropdown

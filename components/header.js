@@ -24,7 +24,6 @@ class Header extends HTMLElement {
           filter: drop-shadow(var(--drop-shadow));
           background-color: var(--bg-header);
           position: relative;
-          overflow: hidden;
         }
         
         .navbar-a {
@@ -49,15 +48,67 @@ class Header extends HTMLElement {
                 color: grey;
             }
         }
+
+        /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
         
+
+
+
         @media screen and (max-width: 700px) {
             .navbar-a {
-                font-size: large;
+                display: none;
             }
         }
 
       </style>
       <div class="navbar">
+        <div class="dropdown">
+            <button>Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="drop-a" href="#">Link 1</a>
+                <a class="drop-a" href="#">Link 2</a>
+                <a class="drop-a" href="#">Link 3</a>
+            </div>
+        </div>
         <a class="navbar-a" href="page1.html">
             <div class="navbar-brand">Page 1</div>
         </a>
