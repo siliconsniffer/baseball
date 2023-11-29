@@ -1,0 +1,12 @@
+.construction {
+    height: 85vh;
+    width: 85vw;
+    background-color: black;
+    align-content: center;
+    justify-content: center;
+
+    .construction-text {
+        font-size: 3rem;
+        color: aliceblue;
+    }
+}

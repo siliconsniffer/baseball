@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
 * {
     text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+
+    &&::selection {
+        color: var(--background-content);
+        background: var(--title);
+    }
 }
 
 :root {
     --background: #2b2b2b;
     --background-content: #343434;
     --title: #777777;
-    --drop-shadow: #545454;
-    --drop-shadow-hover: #3f3f3f;
+    --drop-shadow: 3px 3px 3px #545454;
+    --drop-shadow-hover: 3px 3px 3px #3f3f3f;
 }
 
 .light-mode {
     --background: #d7d7d7;
     --background-content: #e1e1e1;
     --title: #5e5e5e;
-    --drop-shadow: #bcbcbc;
-    --drop-shadow-hover: #b8b8b8;
+    --drop-shadow: 3px 3px 3px #bcbcbc;
+    --drop-shadow-hover: 3px 3px 3px #b8b8b8;
 }
 
 a,
@@ -54,25 +62,27 @@ img {
     overflow: visible;
 }
 
-.baseball {
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
-    background-image: url("../assets/copy.jpg");
+    background-image: url("../assets/copy.webp");
     background-size: cover;
     background-position: center;
+    filter: grayscale(30%) drop-shadow(var(--drop-shadow));
     height: 23.5rem;
     border-radius: 10px;
+}
 
-    h1 {
-        width: fit-content;
-        height: fit-content;
-        padding: 0 5px 0px;
-        background-color: var(--background-content);
-        text-align: center;
-        color: var(--title);
-    }
+h1 {
+    margin: 0 0 1.5rem 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px 0px;
+    background-color: var(--background-content);
+    text-align: center;
+    color: var(--title);
 }
 
 .divider {
@@ -105,7 +115,7 @@ img {
 
     & .text {
         padding: 0px 10px 0px;
-        font-size: larger;
+        font-size: 125%;
 
 
         & .title {
