@@ -1,8 +1,9 @@
 .construction {
+    display: flex;
     height: 85vh;
     width: 85vw;
     background-color: black;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 
     .construction-text {

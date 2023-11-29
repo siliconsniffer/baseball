@@ -67,10 +67,10 @@ img {
     justify-content: center;
     align-items: center;
     width: 95%;
-    background-image: url("../assets/copy.webp");
+    background-image: url("../assets/copy1920.webp");
+    filter: grayscale(30%) drop-shadow(var(--drop-shadow));
     background-size: cover;
     background-position: center;
-    filter: grayscale(30%) drop-shadow(var(--drop-shadow));
     height: 23.5rem;
     border-radius: 10px;
 }
