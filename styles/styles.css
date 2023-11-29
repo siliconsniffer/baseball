@@ -15,7 +15,7 @@
     --background-content: #343434;
     --title: #777777;
     --drop-shadow: 3px 3px 3px #545454;
-    --drop-shadow-hover: 3px 3px 3px #3f3f3f;
+    --drop-shadow-hover: #3f3f3f;
 }
 
 .light-mode {
@@ -23,7 +23,7 @@
     --background-content: #e1e1e1;
     --title: #5e5e5e;
     --drop-shadow: 3px 3px 3px #bcbcbc;
-    --drop-shadow-hover: 3px 3px 3px #b8b8b8;
+    --drop-shadow-hover: #b8b8b8;
 }
 
 a,
@@ -79,7 +79,7 @@ h1 {
     margin: 0 0 1.5rem 0;
     width: fit-content;
     height: fit-content;
-    padding: 0 5px 0px;
+    padding: 5px;
     background-color: var(--background-content);
     text-align: center;
     color: var(--title);
@@ -114,7 +114,7 @@ h1 {
     }
 
     & .text {
-        padding: 0px 10px 0px;
+        padding: 10px;
         font-size: 125%;
 
 
@@ -122,7 +122,6 @@ h1 {
             font-weight: bold;
             text-transform: uppercase;
             color: var(--title);
-            margin-top: 1rem;
         }
     }
 }
