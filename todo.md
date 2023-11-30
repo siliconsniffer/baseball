@@ -4,3 +4,4 @@
 - [ ] {HTML + CSS} Unterseiten einrichten
 - [ ] {HTML} Inhalt eintragen
 - [ ] {CSS} Navbar für Mobile stylen, Dropdown
+- [ ] {HTML} font lokal einbinden

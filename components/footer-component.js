@@ -19,16 +19,16 @@ class Footer extends HTMLElement {
             background-color: var(--bg-color);
             padding: 2.5px;
             border-top: 1.5px solid black;
-            
+
         }
 
         .theme {
             border: none;
             border-radius: 2.5px;
-            background-color: #2e302f;
-        
+            background-color: var(--bg-color);
+
             &:hover {
-                background-color: #383d39;
+                background-color: var(--drop-shadow-hover);
             }
         }
         </style>
