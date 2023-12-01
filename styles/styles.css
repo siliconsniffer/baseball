@@ -29,7 +29,6 @@
 }
 
 --------------------------------------------------------------------------------
-
 /*General Styling*/
 
 html {
@@ -41,6 +40,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     background: var(--background);
+    padding: 10px;
 }
 
 a,
@@ -56,7 +56,7 @@ img {
     height: auto;
 }
 
---------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------*/
 
 /*Content in the Page*/
 
@@ -117,13 +117,14 @@ h1 {
     filter: drop-shadow(var(--drop-shadow));
     overflow: hidden;
 
-    & .bildrahmen, .teams {
+    & .bildrahmen,
+    .teams {
         display: flex;
         filter: grayscale(80%);
     }
 
     .teams {
-      padding: 10px;
+        padding: 10px;
     }
 
     & .text {
@@ -140,7 +141,7 @@ h1 {
 }
 
 .sources {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .content-left {
@@ -154,24 +155,23 @@ h1 {
     box-shadow: 0px 0px 10px 5px var(--drop-shadow-hover);
     transition: 250ms;
 
-    & .bildrahmen {
+    /*& .bildrahmen {
         filter: grayscale(0%);
         transition: 200ms;
-    }
+    }*/
 }
 
 .sources {
     list-style: none;
 
-    & li:hover {
+    /*&li:hover {
         text-decoration: underline;
         text-decoration-color: #282828;
         text-decoration-thickness: 2.5px;
-    }
+    }*/
 }
 
 --------------------------------------------------------------------------------
-
 /*Media Query*/
 
 @media screen and (max-width: 700px) {
