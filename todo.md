@@ -2,6 +2,11 @@
 ↓ Nach Priorität geordnet
 - [ ] {CSS} Bilder auf kleineren Bildschirmen fixen
 - [ ] {HTML + CSS} Unterseiten einrichten
+
 - [ ] {HTML} Inhalt eintragen
-- [ ] {CSS} Navbar für Mobile stylen, Dropdown
-- [ ] {HTML} font lokal einbinden
+  - [ ] {HTML} Mannschaften heraussuchen & eintragen
+  - [ ] {HTML} Ligen heraussuchen & eintragen
+- [ ] {HTML} Quellen ergänzen
+- [ ] {HTML + CSS} "Puffer-Bilder"
+
+- [ ] {HTML + CSS + JS} Navbar für Mobile stylen, Dropdown

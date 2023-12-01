@@ -1,10 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
-
 /*Root styling and Variables*/
+@font-face {
+    font-family: "Figtree";
+    src: url('../Figtree/Figtree-VariableFont_wght.ttf') format('embedded-opentype'),
+        /* Internet Explorer */
+        url('../Figtree/Figtree-VariableFont_wght.ttf') format('woff2'),
+        /* Super Modern Browsers */
+        url('../Figtree/Figtree-VariableFont_wght.ttf') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../Figtree/Figtree-VariableFont_wght.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../Figtree/Figtree-VariableFont_wght.ttf') format('svg');
+    /* Legacy iOS */
+
+    font-weight: 500;
+    font-style: sans-serif;
+}
 
 * {
+    font-family: "Figtree";
     text-decoration: none;
-    font-family: 'Figtree', sans-serif;
 
     &&::selection {
         color: var(--background-content);
@@ -28,7 +42,6 @@
     --drop-shadow-hover: #b8b8b8;
 }
 
---------------------------------------------------------------------------------
 /*General Styling*/
 
 html {
@@ -55,8 +68,6 @@ img {
     max-width: 25rem;
     height: auto;
 }
-
-/*--------------------------------------------------------------------------------*/
 
 /*Content in the Page*/
 
@@ -171,7 +182,6 @@ h1 {
     }*/
 }
 
---------------------------------------------------------------------------------
 /*Media Query*/
 
 @media screen and (max-width: 700px) {
