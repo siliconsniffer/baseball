@@ -1,5 +1,7 @@
 # To-Do
+
 ↓ Nach Priorität geordnet
+
 - [ ] {CSS} Bilder auf kleineren Bildschirmen fixen
 - [ ] {HTML + CSS} Unterseiten einrichten
 
