@@ -7,9 +7,11 @@ class Footer extends HTMLElement {
         <style>
         :root {
             --bg-color: #282828;
+            --title: #9c9c9c;
         }
         .light-mode {
             --bg-color: #e1e1e1;
+            --title: #5e5e5e;
         }
         .footer {
             display: flex;
@@ -25,6 +27,7 @@ class Footer extends HTMLElement {
         .theme {
             border: none;
             border-radius: 2.5px;
+            color: var(--title);
             background-color: var(--bg-color);
 
             &:hover {
@@ -44,6 +47,7 @@ class Footer extends HTMLElement {
         this.button = this.querySelector('.theme');
         this.button.addEventListener('click', this.toggleMode.bind(this));
     }
+
     setInitialMode() {
         const currentMode = localStorage.getItem('mode') || 'light';
 

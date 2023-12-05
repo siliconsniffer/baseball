@@ -70,7 +70,7 @@ class Header extends HTMLElement {
             <div class="navbar-brand">Impressum</div>
         </a>
         <a class="navbar-a" href="sources.html">
-            <div class="navbar-brand">Sources</div>
+            <div class="navbar-brand">Quellen</div>
         </a>
     </div>
       `;

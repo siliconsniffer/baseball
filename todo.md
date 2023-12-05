@@ -12,3 +12,5 @@
 - [ ] {HTML + CSS} "Puffer-Bilder"
 
 - [ ] {HTML + CSS + JS} Navbar für Mobile stylen, Dropdown
+
+- [] {HTML + CSS + JS } Markieren der aktuellen Seite in der Navbar
