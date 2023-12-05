@@ -80,6 +80,8 @@ img {
   position: relative;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
   overflow: visible;
 }
 
@@ -115,8 +117,6 @@ h1 {
 .divider {
   display: block;
   width: 85%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
   border-style: solid;
   border-width: 1px;
   border-color: var(--title);
@@ -126,7 +126,6 @@ h1 {
 .content-left {
   display: flex;
   width: 95%;
-  margin-bottom: 1.5rem;
   background-color: var(--background-content);
   border-radius: 10px;
   filter: drop-shadow(var(--drop-shadow));
@@ -174,10 +173,10 @@ h1 {
   }
 }
 
-.sources {
+.sources, .infos-teams {
   list-style: none;
 
-  && li:hover {
+  && .sources:hover {
     text-decoration: underline;
     text-decoration-color: #282828;
     text-decoration-thickness: 2.5px;
