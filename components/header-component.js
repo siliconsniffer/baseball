@@ -58,7 +58,7 @@ class Header extends HTMLElement {
       </style>
       <div class="navbar">
         <a class="navbar-a" href="construction.html">
-            <div class="navbar-brand">Menschen</div>
+            <div class="navbar-brand">Teams</div>
         </a>
         <a class="navbar-a" href="construction.html">
             <div class="navbar-brand">Ligen</div>
