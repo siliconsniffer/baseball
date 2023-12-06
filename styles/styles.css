@@ -77,12 +77,10 @@ img {
   min-height: 90vh;
   min-height: 90svh;
   margin-top: 1.5rem;
-  position: relative;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
-  overflow: visible;
 }
 
 .heading-baseball,
@@ -111,7 +109,7 @@ h1 {
   text-align: center;
   color: var(--title);
   padding: 2.5rem 5rem;
-  border-radius: 2.5px;
+  border-radius: 5px;
 }
 
 .divider {
@@ -173,7 +171,8 @@ h1 {
   }
 }
 
-.sources, .infos-teams {
+.sources,
+.infos-teams {
   list-style: none;
 
   && .sources:hover {
