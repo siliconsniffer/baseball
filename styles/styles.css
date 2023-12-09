@@ -156,10 +156,6 @@ img {
   justify-content: space-between;
 }
 
-.sources {
-  margin-top: 5px;
-}
-
 .content:hover,
 .content-left:hover {
   box-shadow: 0px 0px 10px 5px var(--drop-shadow-hover);
@@ -173,11 +169,12 @@ img {
 
 .sources,
 .infos-teams {
+  margin-top: 5px;
   list-style: none;
 
-  && .sources:hover {
+  &&.sources li:hover {
     text-decoration: underline;
-    text-decoration-color: #282828;
+    text-decoration-color: var(#5e5e5e);
     text-decoration-thickness: 2.5px;
   }
 }

@@ -1,9 +1,9 @@
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
       <style>
         :root {
             --bg-header: #272727;
@@ -64,8 +64,9 @@ class Header extends HTMLElement {
        @media screen and (max-width: 600px) {
          .navbar a:not(:nth-child(0n+3)) {display: none;}
          .navbar a.icon {
-           float: right;
-           display: block;
+          display: block; 
+          float: right;
+          margin-right: 5px;
          }
        }
 
@@ -112,7 +113,7 @@ class Header extends HTMLElement {
         </a>
     </div>
       `;
-    }
+  }
 }
 
 customElements.define("header-component", Header);
