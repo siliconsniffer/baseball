@@ -101,7 +101,7 @@ class Header extends HTMLElement {
             <div class="navbar-brand">Home</div>
         </a>
         <a class="navbar-a" href="construction.html">
-            <div class="navbar-brand">Impressum</div>
+            <div class="navbar-brand">Menschen</div>
         </a>
         <a class="navbar-a" href="sources.html">
             <div class="navbar-brand">Quellen</div>

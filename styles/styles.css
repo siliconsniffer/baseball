@@ -1,15 +1,16 @@
 /*Root styling and Variables*/
 @font-face {
   font-family: "Figtree";
-  src: url("../Figtree/Figtree-VariableFont_wght.ttf") format("embedded-opentype"),
-    /* Internet Explorer */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("woff2"),
-    /* Super Modern Browsers */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("woff"),
-    /* Pretty Modern Browsers */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("truetype"),
-    /* Safari, Android, iOS */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("svg");
+  src: url("../Figtree/Figtree-VariableFont_wght.ttf")
+      format("embedded-opentype"),
+    /* Internet Explorer */ url("../Figtree/Figtree-VariableFont_wght.ttf")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../Figtree/Figtree-VariableFont_wght.ttf")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../Figtree/Figtree-VariableFont_wght.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../Figtree/Figtree-VariableFont_wght.ttf")
+      format("svg");
   /* Legacy iOS */
 
   font-weight: 500;
@@ -63,7 +64,7 @@ li {
 }
 
 .link {
-  color: blue;
+  color: #5c5c5c;
 
   &&.link:hover {
     text-decoration: underline;
@@ -119,13 +120,12 @@ img {
 .divider {
   display: block;
   width: 85%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--title);
+  border: 1px solid var(--title);
 }
 
 .content,
-.content-left {
+.content-left,
+.content-teams {
   display: flex;
   width: 95%;
   background-color: var(--background-content);
@@ -147,14 +147,13 @@ img {
 
 .text {
   padding: 10px 15px 10px 10px;
-  font-size: 125%;
+  font-size: 135%;
 
   .title {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--title);
   }
-
 }
 
 .content-left {
@@ -193,18 +192,23 @@ img {
 
 .content-teams {
   display: flex;
+  gap: 1rem;
   flex-direction: column;
 
   .team {
     display: flex;
     flex-direction: row;
   }
+
+  .bildrahmen {
+    border-right: 5px solid var(--background);
+    padding: 10px;
+  }
 }
 
 /*Media Query*/
 
 @media screen and (max-width: 700px) {
-
   .content,
   .content-left {
     flex-direction: column;
