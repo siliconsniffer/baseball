@@ -10,5 +10,6 @@
   - [ ] {HTML} Ligen heraussuchen & eintragen
 - [ ] {HTML} Quellen ergänzen
 - [ ] {HTML + CSS} "Puffer-Bilder"
+- [ ] {CSS} Animationen
 
-- [ ] {HTML + CSS + JS} Navbar für Mobile stylen, Dropdown
+- [ ] {HTML + CSS + JS } Markieren der aktuellen Seite in der Navbar

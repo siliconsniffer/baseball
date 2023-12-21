@@ -13,7 +13,6 @@
   /* Legacy iOS */
 
   font-weight: 500;
-  font-style: sans-serif;
 }
 
 * {
@@ -31,6 +30,7 @@
   --background-content: #343434;
   --title: #9c9c9c;
   --link: #5c5c5c;
+  --brightness-blur: 50%;
   --drop-shadow: 3px 3px 3px #545454;
   --drop-shadow-hover: #3f3f3f;
 }
@@ -39,6 +39,7 @@
   --background: #d7d7d7;
   --background-content: #e1e1e1;
   --title: #5e5e5e;
+  --brightness-blur: 150%;
   --link: #a0a0a0;
   --drop-shadow: 3px 3px 3px #bcbcbc;
   --drop-shadow-hover: #b8b8b8;
@@ -87,10 +88,10 @@ img {
   min-height: 90vh;
   min-height: 90svh;
   margin-top: 1.5rem;
-  position: relative;
   flex-direction: column;
   align-items: center;
-  overflow: visible;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .heading-baseball,
@@ -107,65 +108,52 @@ img {
   border-radius: 10px;
 }
 
-h1 {
-  margin: 0 0 1.5rem 0;
+.h1-heading {
   width: fit-content;
   height: fit-content;
-  padding: 5px;
-  background-color: var(--background-content);
+  backdrop-filter: blur(5px) brightness(var(--brightness-blur));
   text-align: center;
   color: var(--title);
+  padding: 2.5rem 5rem;
+  border-radius: 5px;
 }
 
 .divider {
   display: block;
   width: 85%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--title);
+  border: 1px solid var(--title);
 }
 
 .content,
-.content-left {
+.content-left,
+.content-teams {
   display: flex;
   width: 95%;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
   background-color: var(--background-content);
-  border-radius: 2.5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 10px;
   filter: drop-shadow(var(--drop-shadow));
   overflow: hidden;
-
-  .bildrahmen {
-    display: flex;
-    align-self: center;
-    filter: grayscale(80%);
-  }
-
-  .text {
-    padding: 10px 15px 10px 10px;
-    font-size: 135%;
-
-    & .title {
-      font-weight: bold;
-      text-transform: uppercase;
-      color: var(--title);
-    }
-  }
 }
 
-.sources {
-  margin-top: 5px;
+.bildrahmen {
+  display: flex;
+  align-self: center;
+  filter: grayscale(80%);
+}
+
+.text {
+  padding: 10px 15px 10px 10px;
+  font-size: 135%;
+
+  .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--title);
+  }
 }
 
 .content-left {
   justify-content: space-between;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .content:hover,
@@ -179,10 +167,12 @@ h1 {
   }
 }
 
-.sources {
+.sources,
+.infos-teams {
+  margin-top: 5px;
   list-style: none;
 
-  && li:hover {
+  &&.sources li:hover {
     text-decoration: underline;
     text-decoration-color: var(#5e5e5e);
     text-decoration-thickness: 1.5px;
