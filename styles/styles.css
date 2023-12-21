@@ -1,16 +1,15 @@
 /*Root styling and Variables*/
 @font-face {
   font-family: "Figtree";
-  src: url("../Figtree/Figtree-VariableFont_wght.ttf")
-      format("embedded-opentype"),
-    /* Internet Explorer */ url("../Figtree/Figtree-VariableFont_wght.ttf")
-      format("woff2"),
-    /* Super Modern Browsers */ url("../Figtree/Figtree-VariableFont_wght.ttf")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("../Figtree/Figtree-VariableFont_wght.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../Figtree/Figtree-VariableFont_wght.ttf")
-      format("svg");
+  src: url("../Figtree/Figtree-VariableFont_wght.ttf") format("embedded-opentype"),
+    /* Internet Explorer */
+    url("../Figtree/Figtree-VariableFont_wght.ttf") format("woff2"),
+    /* Super Modern Browsers */
+    url("../Figtree/Figtree-VariableFont_wght.ttf") format("woff"),
+    /* Pretty Modern Browsers */
+    url("../Figtree/Figtree-VariableFont_wght.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../Figtree/Figtree-VariableFont_wght.ttf") format("svg");
   /* Legacy iOS */
 
   font-weight: 500;
@@ -31,6 +30,7 @@
   --background: #2b2b2b;
   --background-content: #343434;
   --title: #9c9c9c;
+  --link: #5c5c5c;
   --drop-shadow: 3px 3px 3px #545454;
   --drop-shadow-hover: #3f3f3f;
 }
@@ -39,6 +39,7 @@
   --background: #d7d7d7;
   --background-content: #e1e1e1;
   --title: #5e5e5e;
+  --link: #a0a0a0;
   --drop-shadow: 3px 3px 3px #bcbcbc;
   --drop-shadow-hover: #b8b8b8;
 }
@@ -62,6 +63,16 @@ li {
   color: var(--title);
 }
 
+.link {
+  color: var(--link);
+
+  &&.link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--title);
+    text-decoration-thickness: 1.5px;
+  }
+}
+
 img {
   width: 100%;
   min-width: 10svw;
@@ -82,7 +93,8 @@ img {
   overflow: visible;
 }
 
-.heading {
+.heading-baseball,
+#teams {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,19 +140,15 @@ h1 {
   filter: drop-shadow(var(--drop-shadow));
   overflow: hidden;
 
-  && .bildrahmen,
-  .teams {
+  .bildrahmen {
     display: flex;
+    align-self: center;
     filter: grayscale(80%);
   }
 
-  .teams {
-    padding: 10px;
-  }
-
-  & .text {
-    padding: 10px;
-    font-size: 125%;
+  .text {
+    padding: 10px 15px 10px 10px;
+    font-size: 135%;
 
     & .title {
       font-weight: bold;
@@ -176,14 +184,61 @@ h1 {
 
   && li:hover {
     text-decoration: underline;
-    text-decoration-color: #282828;
-    text-decoration-thickness: 2.5px;
+    text-decoration-color: var(#5e5e5e);
+    text-decoration-thickness: 1.5px;
+  }
+}
+
+/* Styling for teams.html */
+
+#teams {
+  background-image: url(../assets/wade-austin-ellis-GudTmd-Q3Cg-unsplash.webp);
+  background-position: 0% 70%;
+}
+
+.bildrahmen-teams {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  background-size: fill;
+  background-position: center;
+}
+
+#yankees {
+  background-image: url(../assets/Yankees_logo.svg);
+}
+
+#redsox {
+  background-image: url(../assets/BostonRedSox_CapLogo.svg);
+}
+
+.h1-heading-teams {
+  width: fit-content;
+  height: fit-content;
+  writing-mode: vertical-lr;
+}
+
+.content-teams {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+
+  .team {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bildrahmen {
+    border-right: 5px solid var(--background);
+    padding: 10px;
   }
 }
 
 /*Media Query*/
 
 @media screen and (max-width: 700px) {
+
   .content,
   .content-left {
     flex-direction: column;
