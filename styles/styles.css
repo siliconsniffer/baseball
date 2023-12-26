@@ -1,22 +1,18 @@
 /*Root styling and Variables*/
+/* rubik-regular - latin */
 @font-face {
-  font-family: "Figtree";
-  src: url("../Figtree/Figtree-VariableFont_wght.ttf") format("embedded-opentype"),
-    /* Internet Explorer */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("woff2"),
-    /* Super Modern Browsers */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("woff"),
-    /* Pretty Modern Browsers */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("truetype"),
-    /* Safari, Android, iOS */
-    url("../Figtree/Figtree-VariableFont_wght.ttf") format("svg");
-  /* Legacy iOS */
-
-  font-weight: 500;
+  font-display: auto;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rubik';
+  font-style: normal;
+  src: url('../rubik-v28-latin/rubik-v28-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../rubik-v28-latin/rubik-v28-latin-regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 * {
-  font-family: "Figtree";
+  font-family: "Rubik";
   text-decoration: none;
 
   &&::selection {
@@ -66,19 +62,24 @@ li {
 
 .link {
   color: var(--link);
+  text-decoration: dashed underline;
 
   &&.link:hover {
+    transition: 200ms;
     text-decoration: underline;
     text-decoration-color: var(--title);
     text-decoration-thickness: 1.5px;
   }
 }
 
-img {
+.img {
+  display: flex;
+  align-self: center;
   width: 100%;
-  min-width: 10svw;
+  min-width: 10rem;
   max-width: 25rem;
   height: auto;
+  filter: grayscale(80%);
 }
 
 /*Content in the Page*/
@@ -111,7 +112,7 @@ img {
 .h1-heading {
   width: fit-content;
   height: fit-content;
-  backdrop-filter: blur(5px) brightness(var(--brightness-blur));
+  backdrop-filter: blur(5px) brightness(var(--brightness-blur)) grayscale(80%);
   text-align: center;
   color: var(--title);
   padding: 2.5rem 5rem;
@@ -135,12 +136,6 @@ img {
   overflow: hidden;
 }
 
-.bildrahmen {
-  display: flex;
-  align-self: center;
-  filter: grayscale(80%);
-}
-
 .text {
   padding: 10px 15px 10px 10px;
   font-size: 135%;
@@ -149,6 +144,10 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--title);
+  }
+
+  p {
+    margin: 7.5px 0 0 0
   }
 }
 
@@ -161,7 +160,7 @@ img {
   box-shadow: 0px 0px 10px 5px var(--drop-shadow-hover);
   transition: 250ms;
 
-  && .bildrahmen {
+  && .img {
     filter: grayscale(0%);
     transition: 200ms;
   }
@@ -181,18 +180,32 @@ img {
 
 /* Styling for teams.html */
 
+#infos {
+  margin: 0;
+}
+
 #teams {
   background-image: url(../assets/wade-austin-ellis-GudTmd-Q3Cg-unsplash.webp);
   background-position: 0% 70%;
 }
 
+.infos-teams li {
+  margin: 7.5px 0;
+}
+
 .bildrahmen-teams {
   display: flex;
-  width: 10%;
-  justify-content: center;
+  min-width: 15rem;
+  min-height: 15rem;
+  height: 100%;
+  justify-content: end;
+  align-self: center;
   align-items: center;
-  background-size: fill;
+  /* background-color: snow; */
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
 }
 
 #yankees {
@@ -203,10 +216,36 @@ img {
   background-image: url(../assets/BostonRedSox_CapLogo.svg);
 }
 
+#cubs {
+  background-image: url(../assets/Chicago_Cubs_logo.svg);
+}
+
 .h1-heading-teams {
+  margin: 0;
+  padding: 5px 0;
+  padding: auto 0;
+  font-size: 40px;
+  font-weight: 800;
   width: fit-content;
   height: fit-content;
   writing-mode: vertical-lr;
+}
+
+#h1-yankees {
+  color: #0f1c43;
+  background-color: #ffffff;
+}
+
+#h1-redsox {
+  color: #ed171f;
+  -webkit-text-stroke: #ffffff 2px;
+  /* background-color: #051c43; */
+}
+
+#h1-cubs {
+  color: #cc3433;
+  -webkit-text-stroke: #ffffff 2px;
+  background-color: #0e3386;
 }
 
 .content-teams {
@@ -217,11 +256,6 @@ img {
   .team {
     display: flex;
     flex-direction: row;
-  }
-
-  .bildrahmen {
-    border-right: 5px solid var(--background);
-    padding: 10px;
   }
 }
 
@@ -234,7 +268,7 @@ img {
     flex-direction: column;
   }
 
-  img {
+  .img {
     width: 100%;
     height: auto;
     max-width: 42rem;

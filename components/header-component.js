@@ -50,7 +50,7 @@ class Header extends HTMLElement {
 
         .icon-bar {
           width: 35px;
-          height: 5px;
+          height: 4px;
           background-color: var(--title);
           margin: 6px 0;
         }
@@ -91,7 +91,7 @@ class Header extends HTMLElement {
 
       </style>
       <div class="navbar" id="navbar">
-        <a class="navbar-a" href="construction.html">
+        <a class="navbar-a" href="teams.html">
             <div class="navbar-brand">Teams</div>
         </a>
         <a class="navbar-a" href="construction.html">

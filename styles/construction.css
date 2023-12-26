@@ -1,5 +1,6 @@
 .construction {
   display: flex;
+  flex-direction: column;
   height: 85vh;
   width: 85vw;
   background-color: black;

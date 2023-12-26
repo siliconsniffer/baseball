@@ -12,4 +12,5 @@
 - [ ] {HTML + CSS} "Puffer-Bilder"
 - [ ] {CSS} Animationen
 
+- [ ] {CSS} teams.html fertig stylen
 - [ ] {HTML + CSS + JS } Markieren der aktuellen Seite in der Navbar
