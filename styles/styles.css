@@ -3,11 +3,11 @@
 @font-face {
   font-display: auto;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
-  src: url('../rubik-v28-latin/rubik-v28-latin-regular.woff2') format('woff2'),
+  src: url("../rubik-v28-latin/rubik-v28-latin-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    url('../rubik-v28-latin/rubik-v28-latin-regular.ttf') format('truetype');
+      url("../rubik-v28-latin/rubik-v28-latin-regular.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -144,10 +144,12 @@ li {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--title);
+    font-size: clamp(1.25rem, 1.35vw, 2vw);
   }
 
   p {
-    margin: 7.5px 0 0 0
+    margin: 7.5px 0 0 0;
+    font-size: clamp(1.125rem, 1.25vw, 2.5vw);
   }
 }
 
@@ -191,12 +193,13 @@ li {
 
 .infos-teams li {
   margin: 7.5px 0;
+  font-size: clamp(1rem, 1.125vw, 2vw);
 }
 
 .bildrahmen-teams {
   display: flex;
-  min-width: 15rem;
-  min-height: 15rem;
+  min-width: clamp(100px, 12.5vw, 15vw);
+  min-height: clamp(100px, 12.5vw, 15vw);
   height: 100%;
   justify-content: end;
   align-self: center;
@@ -262,7 +265,6 @@ li {
 /*Media Query*/
 
 @media screen and (max-width: 700px) {
-
   .content,
   .content-left {
     flex-direction: column;
@@ -274,8 +276,19 @@ li {
     max-width: 42rem;
   }
 
-  p,
-  li {
-    font-size: medium;
+  .content-teams {
+    .team {
+      flex-direction: column;
+    }
+  }
+
+  .bildrahmen-teams {
+    min-width: clamp(100px, 25vw, 30vw);
+    min-height: clamp(100px, 25vw, 30vw);
+    align-items: flex-end;
+  }
+
+  .h1-heading-teams {
+    writing-mode: unset;
   }
 }
