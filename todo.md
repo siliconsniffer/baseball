@@ -6,7 +6,7 @@
 - [ ] {HTML + CSS} Unterseiten einrichten
 
 - [ ] {HTML} Inhalt eintragen
-  - [ ] {HTML} Mannschaften heraussuchen & eintragen
+  - [x] {HTML} Mannschaften heraussuchen & eintragen
   - [ ] {HTML} Ligen heraussuchen & eintragen
 - [ ] {HTML} Quellen ergänzen
 - [ ] {HTML + CSS} "Puffer-Bilder"

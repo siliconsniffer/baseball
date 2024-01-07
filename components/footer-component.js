@@ -36,7 +36,7 @@ class Footer extends HTMLElement {
         }
         </style>
         <div class="footer">
-            <p>Felix & Linus © 2023</p>
+            <p>Felix & Linus © 2023-2024</p>
             <a href="impressum.html">Impressum</a>
             <button class="theme" onclick="toggleMode()">Dark/Light</button>
         </div class="footer">
