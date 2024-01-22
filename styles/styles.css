@@ -7,7 +7,7 @@
   font-style: normal;
   src: url("../rubik-v28-latin/rubik-v28-latin-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    url("../rubik-v28-latin/rubik-v28-latin-regular.ttf") format("truetype");
+      url("../rubik-v28-latin/rubik-v28-latin-regular.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -113,6 +113,8 @@ li {
   width: fit-content;
   height: fit-content;
   backdrop-filter: blur(5px) brightness(var(--brightness-blur)) grayscale(80%);
+  -webkit-backdrop-filter: blur(5px) brightness(--brightness-blur)
+    grayscale(80%);
   text-align: center;
   color: var(--title);
   padding: 2.5rem 5rem;
@@ -272,7 +274,7 @@ li {
 
 .card {
   width: 80px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
@@ -280,7 +282,7 @@ li {
   margin: 0 10px;
   display: flex;
   align-items: flex-end;
-  transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
 
@@ -293,7 +295,6 @@ li {
 /*Media Query*/
 
 @media screen and (max-width: 700px) {
-
   .content,
   .content-left {
     flex-direction: column;
