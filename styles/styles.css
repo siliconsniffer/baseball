@@ -112,7 +112,7 @@ li {
 .h1-heading {
   width: fit-content;
   height: fit-content;
-  -webkit-backdrop-filter: blur(5px) brightness(--brightness-blur) grayscale(80%);
+  -webkit-backdrop-filter: blur(5px) brightness(var(--brightness-blur)) grayscale(80%);
   backdrop-filter: blur(5px) brightness(var(--brightness-blur)) grayscale(80%);
   text-align: center;
   color: var(--title);
