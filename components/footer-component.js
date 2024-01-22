@@ -27,6 +27,7 @@ class Footer extends HTMLElement {
         .theme {
             border: none;
             border-radius: 2.5px;
+            font-size: 14px;
             color: var(--title);
             background-color: var(--bg-color);
 
