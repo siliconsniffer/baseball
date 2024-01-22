@@ -8,7 +8,15 @@
   justify-content: center;
 
   .construction-text {
-    font-size: 3rem;
+    display: flex;
+    justify-self: center;
+    font-size: 2.5rem;
     color: aliceblue;
+    padding: 10px;
+  }
+
+  .construction-image {
+    width: clamp(200px, 25%, 500px);
+    height: auto;
   }
 }
